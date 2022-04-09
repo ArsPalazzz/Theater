@@ -1,0 +1,299 @@
+header {
+  width: 100%;
+  /* height: 14vh; */
+  background-color: rgba(0, 0, 0, 0.703);
+  position: fixed;
+  z-index: 100;
+  /*max-height: 14.5%;
+  min-height: 2%;*/
+  max-height: 14.5vh;
+  min-height: 2vh;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+header:hover {
+  background-color: rgba(0, 0, 0, 0.896);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .pic {
+  width: 5vw;
+  max-height: 100%;
+  margin: 1% 0 0% 10px;
+}
+.header .pic img {
+  width: 100%;
+  max-height: 105px;
+}
+.header .menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header .menu nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header .menu nav ul li {
+  list-style-type: none;
+  margin-right: 20px;
+  display: inline-block;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.header .menu nav ul li a {
+  font-size: 1.6vw;
+}
+
+.header .menu nav ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30%;
+}
+
+.p1 {
+  height: 75%;
+  background-color: #272727;
+}
+
+.p1Flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.p1Flex .moreAU {
+  width: 47%;
+}
+
+.p1Flex .lineNcon {
+  width: 50%;
+}
+
+.lineNconFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moreAU {
+  margin-left: 3%;
+}
+
+.moreAUFlex .dop, .gmail, .phone {
+  font-size: 1.2vw;
+  text-shadow: 1px 1px 1px black;
+}
+
+.moreAUFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.moreAUFlex .gl, .contacts {
+  font-size: 2.8vw;
+  margin-top: 1vw;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 2px black;
+}
+
+.moreAUFlex .gl {
+  margin-top: 0.3vw;
+}
+
+.meFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.meFlex .gh, .meFlex .vk, .meFlex .inst {
+  width: 2.75vw;
+  margin-right: 7%;
+}
+
+.meFlex img {
+  width: 100%;
+}
+
+.contNme {
+  margin-left: 5%;
+}
+
+.contNmeFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.line {
+  height: 150%;
+}
+
+.lineFlex {
+  height: 100%;
+}
+
+.line img {
+  height: 100%;
+}
+
+.me {
+  margin-left: 1.5%;
+}
+
+.phone {
+  margin-bottom: 0;
+}
+
+.gmail {
+  margin-top: 0;
+}
+
+.p2 {
+  height: 25%;
+  background-color: black;
+}
+
+.p2 p {
+  font-size: 1.25vw;
+}
+
+.p2Flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.moreAU, .lineNcon {
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+}
+
+@font-face {
+  font-family: "Reem Kufi";
+  src: url("fonts/ReemKufi-Regular.ttf");
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  color: white;
+  font-family: "Reem Kufi";
+  background-image: url("img/back.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #464646;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.mainBlock {
+  width: 100vw;
+  height: 100vh;
+}
+.mainBlock .mainText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  top: 72vh;
+  position: relative;
+  margin: auto;
+}
+.mainBlock .mainText .firstP {
+  font-size: 6vw;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+.mainBlock .mainText .secondP {
+  font-size: 2.5vw;
+  margin: 0;
+  margin-top: -2.5%;
+  text-shadow: 1px 1px 1px black;
+}
