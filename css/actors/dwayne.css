@@ -615,8 +615,8 @@ body {
 }
 @media (min-width: 320px) and (max-width: 560px) {
   body {
-    background-size: cover;
-    background-position: -180vw -5vh;
+    background-size: 240%;
+    background-position: -85vw 0vh;
   }
 
   .mainBlock {
