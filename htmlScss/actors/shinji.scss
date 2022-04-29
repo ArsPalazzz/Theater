@@ -73,6 +73,11 @@ body {
                     width: 30vw;
                     img {
                         width: 100%;
+                        transition: 0.15s all linear;
+                    }
+                    img:hover {
+                        filter: brightness(80%);
+                        transform: scale(1.015);
                     }
                     a:link {
                         color: black;
