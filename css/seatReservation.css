@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   width: 100%;
   /* height: 14vh; */
@@ -30,17 +34,44 @@ header:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.header .pic {
+.header .picNP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50vw;
+}
+.header .picNP .pic {
   width: 4.8vw;
   max-height: 100%;
-  margin: 0.7% 0 0% 10px;
+  margin: 2% 0 0.5% 0%;
+  display: inline-block;
 }
-.header .pic img {
+.header .picNP .pic img {
   width: 100%;
   max-height: 105px;
 }
+.header .picNP a {
+  display: inline-block;
+  font-size: 2vw;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 2px 2px 2px black;
+  padding-right: 5%;
+  -webkit-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+.header .picNP a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  text-shadow: 0 0 3px;
+}
 .header .menu {
-  width: 80vw;
+  width: 50vw;
 }
 .header .menu nav {
   display: -webkit-box;
@@ -73,6 +104,7 @@ header:hover {
 .header .menu nav ul li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  text-shadow: 0 0 3px;
 }
 
 a {
@@ -84,13 +116,27 @@ a:link, a:visited {
 }
 
 @media (min-width: 320px) and (max-width: 560px) {
-  header .header .pic {
-    width: 6vh;
-    height: 6vh;
-    margin: 1.2% 0 1.2% 7px;
+  header .header .picNP {
+    width: 15vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 2%;
   }
-  header .header .pic img {
+  header .header .picNP .pic {
+    width: 5vh;
+    height: 5vh;
+    margin: 1.2% 0.5% 10% 7px;
+  }
+  header .header .picNP .pic img {
     max-height: 250px;
+  }
+  header .header .picNP .tbut {
+    display: none;
+    position: absolute;
+  }
+  header .header .menu {
+    width: 85vw;
   }
   header .header .menu nav ul li {
     margin-right: 20px;
@@ -101,17 +147,31 @@ a:link, a:visited {
   }
 }
 @media (min-width: 560px) and (max-width: 1000px) {
-  header .header .pic {
+  header .header .picNP {
+    width: 15vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 2%;
+  }
+  header .header .picNP .pic {
     width: 7.5vh;
     height: 7.5vh;
-    margin: 1.2% 0 1.2% 12px;
+    margin: 1.2% 0 8% 12px;
   }
-  header .header .pic a {
+  header .header .picNP .pic a {
     height: 100%;
     display: inline-block;
   }
-  header .header .pic img {
+  header .header .picNP .pic img {
     max-height: 250px;
+  }
+  header .header .picNP .tbut {
+    display: none;
+    position: absolute;
+  }
+  header .header .menu {
+    width: 85vw;
   }
   header .header .menu nav ul li {
     margin-right: 25px;
@@ -211,12 +271,22 @@ footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messages
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
   width: 3vw;
   margin-right: 1vw;
+  -webkit-transition: 0.1s all linear;
+  transition: 0.1s all linear;
 }
-footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
   width: 100%;
+}
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 footer .footerFlex .part2 {
   background-color: black;
@@ -288,11 +358,11 @@ footer .footerFlex .part2 .part2Flex p {
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex {
     width: 100%;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
     width: 4vw;
     margin-right: 2.5vw;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
     width: 100%;
   }
   footer .footerFlex .part2 .part2Flex p {
@@ -352,11 +422,11 @@ footer .footerFlex .part2 .part2Flex p {
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex {
     width: 100%;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
     width: 5vw;
     margin-right: 3vw;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
     width: 100%;
   }
   footer .footerFlex .part2 .part2Flex p {
@@ -527,7 +597,7 @@ body {
 }
 .secBlock .secBlockFlex .form .formFlex .formGroupSelectsNimg .img p {
   position: absolute;
-  top: 146vh;
+  top: 150vh;
   z-index: 100;
   font-size: 1.5vw;
   right: 34vw;
@@ -561,7 +631,7 @@ body {
   padding: 6% 3% 6% 3%;
   border-radius: 12px;
   color: #fff;
-  background-color: #0071f0;
+  background-color: #005bc4;
   outline: none;
   cursor: pointer;
   -webkit-transition: 0.3s;
@@ -588,7 +658,7 @@ body {
   font-size: 1.2vw;
 }
 .secBlock .secBlockFlex .form .formGroupButtons .formGroupButtonsFlex .pay input:hover {
-  background-color: #0f5cb5;
+  background-color: #004697;
 }
 .secBlock .secBlockFlex .form .formGroupButtons .formGroupButtonsFlex .cancel input:hover {
   background-color: #e2e2e2;
