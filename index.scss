@@ -11,10 +11,14 @@
   width: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   font-family: "Reem Kufi";
-  background-image: url("img/back.png");
+  //background-image: url("img/back.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -27,7 +31,14 @@ body {
 .mainBlock {
   width: 100vw;
   height: 100vh;
-
+  .myBackgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .mainText {
     display: flex;
     justify-content: center;
@@ -752,9 +763,12 @@ body {
 
   .mainBlock {
     height: 101vh;
-
+    .myBackgroundVideo {
+      height: 101vh;
+    }
     .mainText {
       width: 95%;
+      top: 60vh;
 
       .firstP {
         font-size: 8vw;
@@ -1022,6 +1036,11 @@ body {
 
   .mainBlock {
     height: 101vh;
+    
+    .myBackgroundVideo {
+      height: 101vh;
+    }
+
     .mainText {
       top: 50vh;
       width: 100%;
