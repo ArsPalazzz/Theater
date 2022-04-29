@@ -331,7 +331,11 @@
                 height: 80vh;
                 img {
                   width: 100%;
-                  
+                  transition: 0.15s all linear;
+                }
+                img:hover {
+                  filter: brightness(80%);
+                  transform: scale(1.015);
                 }
                 p {
                   text-align: center;
