@@ -1437,6 +1437,9 @@ body {
   }
   .mainBlock .myBackgroundVideo {
     height: 101vh;
+    width: 200vw;
+    top: 0;
+    left: -100vw;
   }
   .mainBlock .mainText {
     width: 95%;
@@ -1708,9 +1711,14 @@ body {
 @media (min-width: 320px) and (max-width: 560px) {
   .mainBlock {
     height: 101vh;
+    width: 100%;
+    overflow: hidden;
   }
   .mainBlock .myBackgroundVideo {
     height: 101vh;
+    width: 200vw;
+    top: 0;
+    left: -100vw;
   }
   .mainBlock .mainText {
     top: 50vh;

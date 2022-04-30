@@ -765,6 +765,9 @@ body {
     height: 101vh;
     .myBackgroundVideo {
       height: 101vh;
+      width: 200vw;
+      top: 0;
+      left: -100vw;
     }
     .mainText {
       width: 95%;
@@ -1036,9 +1039,15 @@ body {
 
   .mainBlock {
     height: 101vh;
+    width: 100%;
+    overflow: hidden;
     
     .myBackgroundVideo {
       height: 101vh;
+      width: 200vw;
+      top: 0;
+      left: -100vw;
+      
     }
 
     .mainText {
