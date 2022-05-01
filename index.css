@@ -623,6 +623,8 @@ body {
   /* min-height: 6vh; */
   float: right;
   position: relative;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
 .allPerformances .mainPerformance .picNOther .premNDate .premiere p {
   font-size: 2.5vw;
@@ -633,6 +635,14 @@ body {
   padding: 2px;
   display: inline-block;
   vertical-align: middle;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.allPerformances .mainPerformance .picNOther .premNDate .premiere:hover {
+  background-color: black;
+}
+.allPerformances .mainPerformance .picNOther .premNDate .premiere:hover p {
+  color: white;
 }
 .allPerformances .mainPerformance .picNOther .premNDate .date {
   font-size: 5vw;
