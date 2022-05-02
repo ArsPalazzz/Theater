@@ -88,12 +88,22 @@ footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messages
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
   width: 3vw;
   margin-right: 1vw;
+  -webkit-transition: 0.1s all linear;
+  transition: 0.1s all linear;
 }
-footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
   width: 100%;
+}
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 footer .footerFlex .part2 {
   background-color: black;
@@ -165,11 +175,11 @@ footer .footerFlex .part2 .part2Flex p {
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex {
     width: 100%;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
-    width: 4vw;
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
+    width: 5.5vw;
     margin-right: 2.5vw;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
     width: 100%;
   }
   footer .footerFlex .part2 .part2Flex p {
@@ -181,63 +191,70 @@ footer .footerFlex .part2 .part2Flex p {
     padding-top: 0.5%;
     padding-bottom: 1%;
   }
+  footer .footerFlex .part1 .part1Flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   footer .footerFlex .part1 .part1Flex .footInf {
-    margin-left: 2vw;
-    border-right: 2px solid black;
-    width: 50vw;
+    margin-left: 4vw;
+    border-bottom: 2px solid black;
+    border-right: none;
+    width: 92vw;
   }
   footer .footerFlex .part1 .part1Flex .footInf .footInfFlex h2 {
-    font-size: 5vw;
-    margin-bottom: 1.5vw;
+    font-size: 6.5vw;
+    margin-bottom: 2.5vw;
   }
   footer .footerFlex .part1 .part1Flex .footInf .footInfFlex p {
-    font-size: 2.3vw;
+    font-size: 3.5vw;
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
     padding-right: 5vw;
   }
   footer .footerFlex .part1 .part1Flex .footCont {
-    width: 50vw;
-    margin-left: 2vw;
+    width: 92vw;
+    margin-left: 4vw;
   }
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex .phNemail h2 {
-    font-size: 5vw;
-    margin-bottom: 1.5vw;
+    font-size: 6.5vw;
+    margin-bottom: 2.5vw;
   }
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex .phNemail p {
-    font-size: 2.3vw;
+    font-size: 3.5vw;
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
   }
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages {
-    margin-left: 0vw;
-    padding-bottom: 0vh;
-    margin-top: 0.6vh;
+    margin: 0.6vh 4vw 0 2vw;
   }
   footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex {
     width: 100%;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
-    width: 5vw;
-    margin-right: 3vw;
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk {
+    width: 8vw;
+    margin-right: 2vw;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .github img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
     width: 100%;
   }
   footer .footerFlex .part2 .part2Flex p {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
 }
 /*# sourceMappingURL=footer.css.map */
