@@ -277,7 +277,7 @@ footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messages
   -webkit-transition: 0.1s all linear;
   transition: 0.1s all linear;
 }
-footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk svg {
   width: 100%;
 }
 footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk:hover {
@@ -362,7 +362,7 @@ footer .footerFlex .part2 .part2Flex p {
     width: 5.5vw;
     margin-right: 2.5vw;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk svg {
     width: 100%;
   }
   footer .footerFlex .part2 .part2Flex p {
@@ -434,7 +434,7 @@ footer .footerFlex .part2 .part2Flex p {
     width: 8vw;
     margin-right: 2vw;
   }
-  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst img, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk img {
+  footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk svg {
     width: 100%;
   }
   footer .footerFlex .part2 .part2Flex p {
