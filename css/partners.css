@@ -15,7 +15,6 @@ header {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-
 header:hover {
   background-color: rgba(0, 0, 0, 0.896);
 }
@@ -96,20 +95,18 @@ header:hover {
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-.header .menu nav ul li a {
-  font-size: 2vw;
-}
-
 .header .menu nav ul li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   text-shadow: 0 0 3px;
 }
+.header .menu nav ul li a {
+  font-size: 2vw;
+}
 
 a {
   text-decoration: none;
 }
-
 a:link, a:visited {
   color: white;
 }
@@ -276,12 +273,12 @@ footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messages
   -webkit-transition: 0.1s all linear;
   transition: 0.1s all linear;
 }
-footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk svg {
-  width: 100%;
-}
 footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk svg {
+  width: 100%;
 }
 footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst {
   -webkit-filter: brightness(85%);
@@ -444,6 +441,16 @@ footer .footerFlex .part2 .part2Flex p {
   font-family: "Reem Kufi";
   src: url("../fonts/ReemKufi-Regular.ttf");
 }
+.mainBlock .mainText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -465,19 +472,12 @@ body {
   height: 100vh;
 }
 .mainBlock .mainText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 90%;
   top: 50vh;
   position: relative;
