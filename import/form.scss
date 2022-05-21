@@ -38,9 +38,10 @@
                 color: white;
                 cursor: pointer;
                 transition: all 0.15s linear;
-              }
-              input[type="submit"]:hover {
-                background-color: #363636;
+
+                &:hover {
+                  background-color: #363636;
+                }
               }
             }
           }

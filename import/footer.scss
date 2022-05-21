@@ -63,13 +63,15 @@
                                         margin-right: 1vw;
                                         transition: 0.1s all linear;
                                         
+                                        &:hover {
+                                            transform: scale(1.1);
+                                        }
+
                                         svg {
                                             width: 100%;
                                         }
                                     }
-                                    .youtube:hover, .inst:hover, .vk:hover {
-                                        transform: scale(1.1);
-                                    }
+                        
                                     .inst {
                                         filter: brightness(85%);
                                         

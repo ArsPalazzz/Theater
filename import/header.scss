@@ -13,11 +13,12 @@ header {
     max-height: 14.5vh;
     min-height: 2vh;
     transition: all 0.2s linear;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.896);
+    }
   }
   
-  header:hover {
-    background-color: rgba(0, 0, 0, 0.896);
-  }
   
   .header {
     display: flex;
@@ -75,6 +76,11 @@ header {
           text-decoration: none;
           transition: all 0.1s linear;
     
+          &:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 3px;
+          }
+
           a {
             font-size: 2vw;
             }
@@ -83,18 +89,13 @@ header {
       }
     }
   }
-  
-  .header .menu nav ul li:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 3px;
-  }
 
   a {
     text-decoration: none;
-  }
-  
-  a:link, a:visited {
-    color: white;
+
+    &:link, &:visited {
+      color: white;
+    }
   }
 
 
