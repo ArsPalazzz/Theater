@@ -4,47 +4,53 @@
 @font-face {
     font-family: "Reem Kufi";
     src: url("../fonts/ReemKufi-Regular.ttf");
-  }
+}
   
-  ::-webkit-scrollbar {
-    width: 0;
-  }
+::-webkit-scrollbar {
+  width: 0;
+}
+
+$gor: center;
+$ver: center;
+
+@mixin gorNverFlex($gor, $ver) {
+  justify-content: $gor;
+  align-items: $ver;
+}
   
-  body {
-    color: white;
-    font-family: "Reem Kufi";
-    background-image: url("../img/Book your place/seats.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #464646;
-    background-attachment: fixed;
-    margin: 0;
-  }
+body {
+  color: white;
+  font-family: "Reem Kufi";
+  background-image: url("../img/Book your place/seats.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #464646;
+  background-attachment: fixed;
+  margin: 0;
+}
   
   
-  .mainBlock {
-    width: 100vw;
-    height: 100vh;
+.mainBlock {
+  width: 100vw;
+  height: 100vh;
   
-    .mainText {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 90%;
-      top: 50vh;
-      position: relative;
-      margin: auto;
+  .mainText {
+    display: flex;
+    @include gorNverFlex($gor, $ver);
+    flex-direction: column;
+    width: 90%;
+    top: 50vh;
+    position: relative;
+    margin: auto;
   
-      .firstP {
-        font-size: 3.5vw;
-        text-shadow: 2px 2px 2px black;
-        margin: 0;
-      }
-  
+    .firstP {
+      font-size: 3.5vw;
+      text-shadow: 2px 2px 2px black;
+      margin: 0;
     }
   }
+}
 
   .secBlock {
     color: black;
@@ -53,12 +59,13 @@
     background-image: url("../img/Book your place/secBack.png");
     background-size: 115%;
     background-position: -15vw -15vh;
+
     .secBlockFlex {
       display: flex;
       flex-direction: column;
       height: 100%;
-      align-items: center;
-      justify-content: center;
+      @include gorNverFlex($gor, $ver);
+     
       .form {
         background-color: white;
         width: 38%;
@@ -140,15 +147,17 @@
                 text-shadow: 1.5px 1.5px 1.5px black;
                 transition: 0.2s linear all;
               }
-            }
-            .img:hover {
-              p, .dark {
-                opacity: 1;
+
+              &:hover {
+                p, .dark {
+                  opacity: 1;
+                }
+                .notDark {
+                  opacity: 0;
+                }
               }
-              .notDark {
-                opacity: 0;
-              }
             }
+            
           }
         }
           .formGroupButtons {
@@ -171,6 +180,10 @@
                   cursor: pointer;
                   transition: 0.3s;
                   font-size: 1.2vw;
+
+                  &:hover {
+                    background-color: #004697;
+                  }
                 }
               }
               .cancel {
@@ -189,14 +202,12 @@
                   cursor: pointer;
                   transition: 0.3s;
                   font-size: 1.2vw;
+
+                  &:hover {
+                    background-color: rgb(226, 226, 226);
+                  }
                 }
-              }
-              .pay input:hover {
-                background-color: #004697;
-              }
-              .cancel input:hover {
-                background-color: rgb(226, 226, 226);
-              }
+              } 
             }
           }
         }

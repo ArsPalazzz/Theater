@@ -4,51 +4,57 @@
 @font-face {
     font-family: "Reem Kufi";
     src: url("../fonts/ReemKufi-Regular.ttf");
+}
+
+$w100: 100vw;
+$h100: 100vh;
+
+%myFlexCol {
+  display: flex;
+  flex-direction: column;
+}
+  
+::-webkit-scrollbar {
+  width: 0;
+}
+  
+body {
+  color: white;
+  font-family: "Reem Kufi";
+  background-image: url("../img/Partners/back.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #464646;
+  background-attachment: fixed;
+  margin: 0;
+}
+  
+  
+.mainBlock {
+  width: $w100;
+  height: $h100;
+  
+  .mainText {
+    @extend %myFlexCol;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    top: 50vh;
+    position: relative;
+    margin: auto;
+  
+    .firstP {
+      font-size: 3.5vw;
+      text-shadow: 2px 2px 2px black;
+      margin: 0;
+    } 
   }
-  
-  ::-webkit-scrollbar {
-    width: 0;
-  }
-  
-  body {
-    color: white;
-    font-family: "Reem Kufi";
-    background-image: url("../img/Partners/back.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #464646;
-    background-attachment: fixed;
-    margin: 0;
-  }
-  
-  
-  .mainBlock {
-    width: 100vw;
-    height: 100vh;
-  
-    .mainText {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 90%;
-      top: 50vh;
-      position: relative;
-      margin: auto;
-  
-      .firstP {
-        font-size: 3.5vw;
-        text-shadow: 2px 2px 2px black;
-        margin: 0;
-      }
-  
-    }
-  }
+}
 
   .allPartners {
     background-color: black;
-    width: 100vw;
+    width: $w100;
     .allPartnersFlex {
       display: flex;
       flex-direction: column;
