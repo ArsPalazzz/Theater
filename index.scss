@@ -11,6 +11,17 @@
   width: 0;
 }
 
+$w100: 100vw;
+$h100: 100vh;
+$dirRow: row;
+$dirCol: column;
+
+
+%wNh100per {
+  width: 100%;
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -29,21 +40,20 @@ body {
 
 
 .mainBlock {
-  width: 100vw;
-  height: 100vh;
+  width: $w100;
+  height: $h100;
   .myBackgroundVideo {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    @extend %wNh100per;
     object-fit: cover;
   }
   .mainText {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: $dirCol;
     width: 90%;
     top: 72vh;
     position: relative;
@@ -75,19 +85,19 @@ body {
 
   .mainPerformance {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: $dirCol wrap;
     align-items: flex-start;
     justify-content: space-around;
     .fbl {
       display: flex;
-      flex-direction: row;
+      flex-direction: $dirRow;
       justify-content: space-between;
       align-items: baseline;
       width: 100%;
 
       .inf {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: $dirCol wrap;
         align-items: flex-start;
         margin-left: 45px;
         margin-top: 50px;
@@ -101,7 +111,7 @@ body {
   
         .dop{
           display: flex;
-          flex-direction: row;
+          flex-direction: $dirRow;
           margin-top: -20px;
   
           p {
@@ -129,11 +139,10 @@ body {
 
     .picNOther {
       display: flex;
-      flex-direction: row;
+      flex-direction: $dirRow;
       justify-content: flex-end;
-      width: 100%;
+      @extend %wNh100per;
       align-items: flex-end;
-      height: 100%;
 
       .el {
         width: 5vw;
@@ -157,6 +166,14 @@ body {
           position: relative;
           transition: background-color .2s linear;
 
+          &:hover {
+            background-color: black;
+
+            p {
+              color: white;
+            }
+          }
+
           p {
             font-size: 2.5vw;
             width: 95%;
@@ -169,14 +186,6 @@ body {
             transition: color .2s linear;
           }
           
-        }
-
-        .premiere:hover {
-          background-color: black;
-
-          p {
-            color: white;
-          }
         }
 
         .date {
@@ -202,8 +211,7 @@ body {
 }
 
 .mainPerformance .picNOther .photo img {
-  width: 100%;
-  height: 100%;
+  @extend %wNh100per;
  display: inline-block;
  
 }
@@ -216,9 +224,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
+    flex-direction: $dirRow;
+    @extend %wNh100per;
 
     .circNtext {
       width: 47.7%;
@@ -284,7 +291,7 @@ body {
 
 .firstFlex {
   display: flex;
-  flex-direction: row;
+  flex-direction: $dirRow;
   align-items: stretch;
   justify-content: space-around;
   height: 100%;
@@ -316,7 +323,7 @@ body {
 
     .agFlex {
       display: flex;
-      flex-direction: row;
+      flex-direction: $dirRow;
       flex-wrap: wrap;
       align-items: flex-end;
       height: 100%;
@@ -329,7 +336,7 @@ body {
 
         .oneMoreFlex {
           display: flex;
-          flex-direction: column;
+          flex-direction: $dirCol;
           justify-content: space-between;
           height: 100%;
 
@@ -337,14 +344,15 @@ body {
             margin-top: 0;
             margin-bottom: 0px;
             transition: all 0.15s linear;
-          }
-          .name:hover {
-            text-shadow: 0 0 4px;
+
+            &:hover {
+              text-shadow: 0 0 4px;
+            }
           }
 
           .flex {
             display: flex;
-            flex-direction: row;
+            flex-direction: $dirRow;
             justify-content: flex-start;
             /* font-size: 2.5vw;*/ 
 
@@ -377,6 +385,15 @@ body {
         padding: 6px 25px 6px 25px;
         margin-bottom: 1.2%;
         transition: all 0.2s linear;
+
+        &:hover {
+          background-color: #EFEBE1;
+          cursor: pointer;
+
+          p {
+            color: black;
+          }
+        }
 
         p {
           font-size: 1.5vw;
@@ -435,15 +452,17 @@ body {
   transition-property: all;  
   transition-duration: 0.2s;
   transition-timing-function: linear;
-}
-.firstPer:hover, .secondPer:hover, .thirdPer:hover, .fourthPer:hover, .fifthPer:hover, .sixthPer:hover, .seventhPer:hover, .eighthPer:hover, .ninethPer:hover, .tenthPer:hover, .eleventhPer:hover, .twelfthPer:hover {
-  background-color: black;
-  color: white;
+
+  &:hover {
+    background-color: black;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
 }
 
-.firstPer:hover a, .secondPer:hover a, .thirdPer:hover a, .fourthPer:hover a, .fifthPer:hover a, .sixthPer:hover a, .seventhPer:hover a, .eighthPer:hover a, .ninethPer:hover a, .tenthPer:hover a, .eleventhPer:hover a, .twelfthPer:hover a {
-  color: white;
-}
 
 .firstPer .clocksSvg  {
   position: relative;
@@ -522,14 +541,7 @@ body {
   width: 6.87%;
 }
 
-.place:hover {
-  background-color: #EFEBE1;
-  cursor: pointer;
-}
 
-.place:hover p {
-  color: black;
-}
 .firstPer:hover .agNFlex .agFlex .place, .secondPer:hover .agNFlex .agFlex .place, .thirdPer:hover .agNFlex .agFlex .place, .fourthPer:hover .agNFlex .agFlex .place, .fifthPer:hover .agNFlex .agFlex .place, .sixthPer:hover .agNFlex .agFlex .place, .seventhPer:hover .agNFlex .agFlex .place, .eighthPer:hover .agNFlex .agFlex .place, .ninethPer:hover .agNFlex .agFlex .place, .tenthPer:hover .agNFlex .agFlex .place, .eleventhPer:hover .agNFlex .agFlex .place, .twelfthPer:hover .agNFlex .agFlex .place {
   border-color: white;
 }
@@ -1102,7 +1114,7 @@ body {
       }
     }
     .picNOther {
-      flex-direction: column;
+      flex-direction: $dirCol;
       .el {
         width: 10vw;
         margin-top: -77%;
@@ -1183,7 +1195,7 @@ body {
   }
 
   .firstFlex {
-    flex-direction: column;
+    flex-direction: $dirCol;
     .date {
       padding-left: 6px;
       position: absolute;
