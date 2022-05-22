@@ -15,7 +15,6 @@ header {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-
 header:hover {
   background-color: rgba(0, 0, 0, 0.896);
 }
@@ -96,20 +95,18 @@ header:hover {
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-.header .menu nav ul li a {
-  font-size: 2vw;
-}
-
 .header .menu nav ul li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   text-shadow: 0 0 3px;
 }
+.header .menu nav ul li a {
+  font-size: 2vw;
+}
 
 a {
   text-decoration: none;
 }
-
 a:link, a:visited {
   color: white;
 }
@@ -396,12 +393,12 @@ footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messages
   -webkit-transition: 0.1s all linear;
   transition: 0.1s all linear;
 }
-footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk svg {
-  width: 100%;
-}
 footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst:hover, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .youtube svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst svg, footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .vk svg {
+  width: 100%;
 }
 footer .footerFlex .part1 .part1Flex .footCont .footContFlex .messages .messagesFlex .inst {
   -webkit-filter: brightness(85%);
@@ -571,7 +568,7 @@ footer .footerFlex .part2 .part2Flex p {
 body {
   color: white;
   font-family: "Reem Kufi";
-  background-image: url("../../img/Backgrounds for actors/zazie.jpg");
+  background-image: url("../../img/BackgroundsForActors/zazie.jpg");
   background-size: cover;
   background-position: center -15vh;
   background-repeat: no-repeat;
